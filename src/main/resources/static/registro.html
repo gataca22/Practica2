@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Registro
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a class="nav-link logo" href="principal.html">Guitarras gataca</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="guitarras.html">Guitarras</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="bajos.html">Bajos</a><br/></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="musica.html">Musica</a><br/></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="registro.html">Registro</a><br/></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="marcas.html">Marcas</a><br/></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="informacion.html">Informacion</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="instrumentos.html">Instrumentos</a></li>
+                </ul>
+                <hr/>
+            </nav>
+        </header>
+        <div>Registro</div>
+        <hr/>
+            <article>
+                <h3>Registro de Usuario</h3>
+                <form action="/usuario/registro" method="post">
+                    Usuario:<input required="true" type="text" name="username" value="" size="15" /><br/>
+                    Contrasena:<input required="true" type="password" name="password" value="" size="10" /><br/>
+                    Nombre:<input required="true" type="text" name="nombre" value="" size="35" /><br/>
+                    Correo:<input required="true" type="email" name="carreo" value="" size="25" /><br/>
+                    Edad:<input type="number" name="edad" value="" min="18" max="68"/><br/>
+                    Fecha activo:<input type="date" name="fActivo" value=""/><br/>
+                    <input type="submit" value="Registrar" />   
+                </form>
+            </article>
+            <hr/>
+    </body>
+</html>
